@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>exams2 list</title>
+
+	<script type="text/javascript">
+		function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+
+        var A = Math.floor(Math.random() * (i + 1));
+
+        var temp = array[i];
+        array[i] = array[A];
+        array[A] = temp;
+    }
+
+    return array;
+}
+
+function show() {
+    var arr = ["Tochiku", "precious", "imam", "israel", "Chiamaka", "mary", "Nasir"];
+    var arr1 = shuffleArray(arr)
+
+    document.write(arr1)
+}
+	</script>
+</head>
+<body>
+	
+   <h3>List of my web-colleage</h3>
+   <p><ol>
+	   <li>Tochiku</li>
+	   <li>precious</li>
+	   <li>imam</li>
+	   <li>israel</li>
+	   <li>chiamaka</li>
+	   <li>mary</li>
+	   <li>Nasir</li>
+	</ol>
+	</p>
+
+	<button onclick="show()">Click</button>
+</body>
+</html>
